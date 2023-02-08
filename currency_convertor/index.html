@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="currency.js"></script>
+</head>
+<body>
+  <div class="container mt-3 shadow p-3 mb-5 bg-body rounded">
+    <div class="card text-center">
+        <div class="card-header">
+          Currency Convertor
+        </div>
+        <div class="card-body">
+            <div class="row row-cols-lg-3 row-cols-sm-1">
+                <div class="col-4 align-self-center">
+                  <select id="currency" class="form-select form-select-lg mb-3" onchange="convert_currency()">
+                    <option selected>Select Currency</option>
+                    <option value="INR">India</option>
+                    <option value="USD">U.S Dollar</option>
+                    <option value="EUR">Euro</option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="AED">UAE Dirham</option>
+                    <option value="SGD">Singapore Dollar</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="BDT">Bangladeshi Taka</option>
+                    <option value="CNY">Renminbi (Yuan)</option>
+                    <option value="NZD">New Zealand Dollar</option>
+                    <option value="EGP">Egyptian Pound</option>
+                    <option value="HKD">Hong Kong Dollar</option>
+                    <option value="IQD">Iraqi Dinar</option>
+                    <option value="JPY">Yen</option>
+                    <option value="KRW">Won</option>
+                    <option value="MVR">Rufiyaa</option>
+                  </select>
+                  <input id="value" class="form-control form-control-lg" type="number" value="1" onchange="convert_currency()">
+                </div>   
+                <div class="col-4 align-self-center">
+                  <img id="arrow_img" src="img/arrow.png" class="img-thumbnail w-25 mb-2" alt="..." onclick="change_side()">
+                </div>   
+                <div class="col-4 align-self-center">
+                  <select id="select-currency" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" onchange="convert_currency()">
+                    <option selected>Select Currency</option>
+                    <option value="INR">India</option>
+                    <option value="USD">U.S Dollar</option>
+                    <option value="EUR">Euro</option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="AED">UAE Dirham</option>
+                    <option value="SGD">Singapore Dollar</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="BDT">Bangladeshi Taka</option>
+                    <option value="CNY">Renminbi (Yuan)</option>
+                    <option value="NZD">New Zealand Dollar</option>
+                    <option value="EGP">Egyptian Pound</option>
+                    <option value="HKD">Hong Kong Dollar</option>
+                    <option value="IQD">Iraqi Dinar</option>
+                    <option value="JPY">Yen</option>
+                    <option value="KRW">Won</option>
+                    <option value="MVR">Rufiyaa</option>
+                  </select>
+                  <input id="result" class="form-control form-control-lg" type="number" placeholder="1" readonly>
+                </div>                    
+            </div>
+        </div>
+        <div class="card-footer text-muted">
+           Thank You 
+        </div>
+      </div>
+</div>
+</body>
+</html>
